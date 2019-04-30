@@ -5,24 +5,25 @@
   "main": "app/main.js",
   "scripts": {
     "start": "electron .",
-    "test": "mocha"
+    "test": "jest"
   },
-  "repository": "https://github.com/electron-in-action/clipmaster-9000.git",
-  "author": "Steve Kinney <hello@stevekinney.net>",
   "license": "MIT",
   "keywords": [
     "electron",
     "clipboard"
   ],
   "dependencies": {
-    "electron": "1.8.2",
+    "electron": "5.0.0",
     "menubar": "5.2.3",
     "request": "2.83.0"
   },
   "devDependencies": {
     "eslint": "4.17.0",
     "eslint-plugin-import": "2.8.0",
-    "mocha": "5.0.0",
-    "spectron": "3.8.0"
+    "jest": "^24.7.1",
+    "spectron": "^5.0.0"
+  },
+  "jest": {
+    "verbose": true
   }
 }

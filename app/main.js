@@ -7,6 +7,9 @@ app.on('ready', () => {
     height: 500,
     width: 300,
     show: false,
+    webPreferences: {
+      nodeIntegration: true
+    }
   });
 
   mainWindow.loadURL(`file://${__dirname}/index.html`);
